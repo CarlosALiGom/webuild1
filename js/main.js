@@ -107,6 +107,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // Prepare form data
             const formData = new FormData(form);
+            formData.append('form-name', 'contact');
             
             // Netlify forms serialization
             const urlEncodedData = new URLSearchParams(formData).toString();
